@@ -216,8 +216,64 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Build.cs">
+      <DependentUpon>MainDataBaseModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Case.cs">
+      <DependentUpon>MainDataBaseModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CPU.cs">
+      <DependentUpon>MainDataBaseModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GPU.cs">
+      <DependentUpon>MainDataBaseModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HardDrive.cs">
+      <DependentUpon>MainDataBaseModels.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\MainDataBaseModels.Context.cs" />
+    <Compile Include="Models\MainDataBaseModels.Context1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MainDataBaseModels.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MainDataBaseModels.cs" />
+    <Compile Include="Models\MainDataBaseModels.designer.cs">
+      <DependentUpon>MainDataBaseModels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MainDataBaseModels1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MainDataBaseModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MainDataBaseModels1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MainDataBaseModels.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Monitor.cs">
+      <DependentUpon>MainDataBaseModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Motherboard.cs">
+      <DependentUpon>MainDataBaseModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OpticalDriver.cs">
+      <DependentUpon>MainDataBaseModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PCICard.cs">
+      <DependentUpon>MainDataBaseModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Peripheral.cs">
+      <DependentUpon>MainDataBaseModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PSU.cs">
+      <DependentUpon>MainDataBaseModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\RAM.cs">
+      <DependentUpon>MainDataBaseModels.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -230,10 +286,25 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Models\MainDataBaseModels.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>MainDataBaseModels.Context1.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\MainDataBaseModels.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>MainDataBaseModels1.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EntityDeploy Include="Models\MainDataBaseModels.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>MainDataBaseModels1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\MainDataBaseModels.edmx.diagram">
+      <DependentUpon>MainDataBaseModels.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -280,6 +351,9 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Builds\Create.cshtml" />
+    <Content Include="Views\Builds\Edit.cshtml" />
+    <Content Include="Views\Builds\Display.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -296,6 +370,9 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
