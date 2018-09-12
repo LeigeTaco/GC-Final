@@ -212,6 +212,8 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\UsersController.cs" />
+    <Compile Include="Controllers\ZincParseController.cs" />
+    <Compile Include="Controllers\ZincParseExtra.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -232,15 +234,10 @@
       <DependentUpon>MainDataBaseModels.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
-    <Compile Include="Models\MainDataBaseModels.Context.cs" />
     <Compile Include="Models\MainDataBaseModels.Context1.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>MainDataBaseModels.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\MainDataBaseModels.cs" />
-    <Compile Include="Models\MainDataBaseModels.designer.cs">
-      <DependentUpon>MainDataBaseModels.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\MainDataBaseModels1.cs">
       <AutoGen>True</AutoGen>
