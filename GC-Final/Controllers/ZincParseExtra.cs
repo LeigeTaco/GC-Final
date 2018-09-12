@@ -9,7 +9,7 @@ namespace GC_Final.Controllers
 {
     public partial class ZincParseController : ApiController
     {
-        
+
 
 
     }
